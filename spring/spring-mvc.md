@@ -1,25 +1,28 @@
-HandlerMapping将Request转换成Handler对象
-RequestMappingHandlerMapping
-BeanNameUrlHandlerMapping
-SimpleUrlHandlerMapping
-ControllerBeanNameHandlerMapping[已删除]
-ControllerClassNameHandlerMapping[已删除]
-DefaultAnnotationHandlerMapping[已删除]
+####HandlerMapping将Request转换成Handler对象
+* RequestMappingHandlerMapping
+ 处理@Controller
+* BeanNameUrlHandlerMapping
+* SimpleUrlHandlerMapping 处理静态资源
 
-Handler处理并返回ModelAndView
-HttpRequestHandler
-Controller
-Servlet
+* ControllerBeanNameHandlerMapping[已删除]
+* ControllerClassNameHandlerMapping[已删除]
+* DefaultAnnotationHandlerMapping[已删除]
 
-HandlerAdapter根据Handler的类型进行适配，
-AnnotationMethodHandlerAdapter[已删除]
-HttpRequestHandlerAdapter
-SimpleControllerHandlerAdapter
-SimpleServletHandlerAdapter
+####Handler处理并返回ModelAndView
+* HandlerMethod
+* HttpRequestHandler
+* Controller
+* Servlet
 
-ModelAndView
+####HandlerAdapter根据Handler的类型进行适配
+* AnnotationMethodHandlerAdapter[已删除]
+* HttpRequestHandlerAdapter
+* SimpleControllerHandlerAdapter
+* SimpleServletHandlerAdapter
 
-ViewResolver
-BeanNameViewResolver
-ContentNegotiatingViewResolver
-ViewResolverComposite
+####ModelAndView
+
+#### ViewResolver
+* BeanNameViewResolver
+* ContentNegotiatingViewResolver
+* ViewResolverComposite
